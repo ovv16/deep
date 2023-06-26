@@ -473,6 +473,8 @@ h6 {
   display: flex;
   min-height: 100vh;
   overflow: hidden;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .main__body {
@@ -546,6 +548,8 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .about__body {
@@ -598,6 +602,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .services__body {
@@ -693,6 +699,11 @@ h6 {
   overflow: hidden;
 }
 
+.portfolio__container {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
 .portfolio__header {
   margin: 0rem 0rem 3.75rem 0rem;
 }
@@ -734,7 +745,8 @@ h6 {
 }
 
 .team__container {
-  overflow: hidden;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .team__header {
@@ -841,7 +853,8 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .contacts__body {
@@ -994,14 +1007,6 @@ textarea.form__input {
 }
 
 @media (min-width: 120em) {
-  [class*=__container] {
-    padding-left: 0.9375rem;
-  }
-
-  [class*=__container] {
-    padding-right: 0.9375rem;
-  }
-
   .header-block__label {
     font-size: 1rem;
   }
@@ -1065,14 +1070,6 @@ textarea.form__input {
 }
 
 @media (max-width: 20em) {
-  [class*=__container] {
-    padding-left: 0.9375rem;
-  }
-
-  [class*=__container] {
-    padding-right: 0.9375rem;
-  }
-
   .header-block__label {
     font-size: 0.75rem;
   }
@@ -1269,37 +1266,13 @@ textarea.form__input {
   }
 }
 
-@media (max-width: 1.875em) {
+@media (max-width: 0em) {
   .fp-bullets {
     right: 1.25rem;
   }
 }
 
 @media (min-width: 20em) and (max-width: 120em) {
-@supports (padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__container] {
-      padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__container] {
-      padding-left: calc(0.9375rem + 0 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__container] {
-      padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
-    [class*=__container] {
-      padding-right: calc(0.9375rem + 0 * (100vw - 20rem) / 100);
-    }
-}
-
 @supports (font-size: clamp( 0.75rem , 0.7rem  +  0.25vw , 1rem )) {
     .header-block__label {
       font-size: clamp( 0.75rem , 0.7rem  +  0.25vw , 1rem );
