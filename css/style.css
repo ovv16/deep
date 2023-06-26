@@ -604,7 +604,7 @@ h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 54.8%;
           flex: 0 0 54.8%;
-  padding: 1.875rem 2.5rem 1.875rem 0rem;
+  padding: 1.875rem 2.5rem 1.875rem 3.125rem;
 }
 
 .services__items {
@@ -1198,6 +1198,10 @@ textarea.form__input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .services__body {
+    padding: 1.875rem 2.5rem;
   }
 
   .services__media {
