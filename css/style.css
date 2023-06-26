@@ -416,6 +416,8 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .footer__copy {
